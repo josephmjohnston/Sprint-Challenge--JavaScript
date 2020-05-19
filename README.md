@@ -26,13 +26,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
+.forEach can return an item/index, .map can return an array of searched items.
+
 2. Explain the difference between a callback and a higher order function.
+
+
 
 3. What is closure?
 
+Closure is the use of scope globally or within a function.
+
 4. Describe the four rules of the 'this' keyword.
 
+window binding refers to global scope. Implicit Binding which uses . notation refering to the item to the left of the dot. New binding which uses the 'new' method to create a new keyword for a function. Explicit binding which uses the keyword call and apply or bind for a function.
+
 5. Why do we need super() in an extended class?
+
+Super allows us to pass and use attributes from a previous class.
 
 ### Task 1 - Project Set up
 
