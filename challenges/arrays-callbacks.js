@@ -21,7 +21,6 @@ The zoos want to display both the scientific name and the animal name in front o
 
 */
 const displayNames = [];
-console.log(displayNames);
 
 zooAnimals.forEach(function(names){
 
@@ -30,6 +29,8 @@ zooAnimals.forEach(function(names){
   displayNames.push(temp)
 
 })
+
+console.log(displayNames);
 
 /* Request 2: .map()
 
@@ -42,6 +43,7 @@ console.log(lowCaseAnimalNames);
 
 const lowCaseAnimalNames = zooAnimals.map(element => element.animal_name.toLowerCase());
 
+console.log(lowCaseAnimalNames);
 /* Request 3: .filter() 
 
 The zoos are concerned about animals with a lower population count. Using filter, create a new array of objects called lowPopulationAnimals which contains only the animals with a population less than 5.
@@ -52,6 +54,7 @@ console.log(lowPopulationAnimals);
 
 const lowPopulationAnimals = zooAnimals.filter(element => element.population < 5);
 
+console.log(lowPopulationAnimals);
 /* Request 4: .reduce() 
 
 The zoos need to know their total animal population across the United States. Find the total population from all the zoos using the .reduce() method. Remember the reduce method takes two arguments: a callback (which itself takes two args), and an initial value for the count.
@@ -60,7 +63,9 @@ The zoos need to know their total animal population across the United States. Fi
 const populationTotal = 0;
 console.log(populationTotal);
 
+const populationTotal = zooAnimals.reduce(totalAnimals, item => totalAnimals + (element.population, 0));
 
+console.log(populationTotal);
 
 // ==== Callbacks ====  
 
@@ -73,7 +78,7 @@ console.log(populationTotal);
 
 function consume (a, b, cb) {
   return cb(a,b);
-};
+}
 
 /* Step 2: Create several functions to callback with consume();
   * Create a function named add that returns the sum of two numbers
@@ -83,15 +88,15 @@ function consume (a, b, cb) {
 
 function add(a, b) {
   return a + b;
-};
+}
 
 function multiply(a, b) {
   return a * b;
-};
+}
 
 function greeting(first, last) {
   return `Hello ${first} ${last}, nice to meet you!`;
-};
+}
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
 console.log(consume(2, 2, add)); // 4
