@@ -18,7 +18,7 @@ myFunction();
 
 // Explanation: 
 
-// As the name suggest nestedFunction is nested within the main function.
+As the name suggest nestedFunction is nested within the main function.
 
 
 /* Task 2: Counter */
